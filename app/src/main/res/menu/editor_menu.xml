@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText,AlwaysShowAction"
+    tools:context=".EditorActivity">
+
+    <item
+        android:id="@+id/lineWeightButton"
+        android:icon="@drawable/small_weight_icon"
+        android:title="Line Weight"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/heavyLineButton"
+                android:icon="@drawable/large_weight_icon"
+                android:title="Heavy"
+                android:onClick="onHeavyLineWeightClicked"/>
+
+            <item
+                android:id="@+id/mediumLineButton"
+                android:icon="@drawable/medium_weight_icon"
+                android:title="Medium"
+                android:onClick="onMediumLineWeightClicked"/>
+
+            <item
+                android:id="@+id/lightLineButton"
+                android:icon="@drawable/small_weight_icon"
+                android:title="Light"
+                android:onClick="onLightLineWeightClicked"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/paletteButton"
+        android:icon="@drawable/palette_icon"
+        android:title="Line Weight"
+        app:showAsAction="always">
+        <menu/>
+    </item>
+
+    <item
+        android:id="@+id/toolsButton"
+        android:icon="@drawable/edit_icon"
+        android:title="Tools"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/lineToolButton"
+                android:icon="@drawable/line_tool_icon"
+                android:title="Line Tool"
+                android:onClick="onLineToolClicked"/>
+
+            <item
+                android:id="@+id/penToolButton"
+                android:icon="@drawable/edit_icon"
+                android:title="Pen Tool"
+                android:onClick="onPenToolClicked"/>
+
+            <item
+                android:id="@+id/highlighterToolButton"
+                android:icon="@drawable/highlighter_tool_icon"
+                android:title="Highlighter Tool"
+                android:onClick="onHighlighterToolClicked"/>
+        </menu>
+    </item>
+</menu>

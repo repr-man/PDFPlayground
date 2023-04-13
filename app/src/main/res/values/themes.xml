@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PDFPlayground" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/uiGray2</item>
+        <item name="colorPrimaryVariant">@color/uiGray</item>
+        <item name="colorOnPrimary">@color/uiText</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/uiText</item>
+        <item name="colorSecondaryVariant">@color/uiText</item>
+        <item name="colorOnSecondary">@color/uiText</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+    </style>
+
+    <style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="tint">@color/uiText</item>
+    </style>
+</resources>
